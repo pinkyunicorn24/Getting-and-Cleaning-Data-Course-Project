@@ -1,0 +1,30 @@
+---
+title: "Codebook"
+author: "Yishan Zhu"
+date: "2019/1/13"
+output: html_document
+---
+1. Reading Data
+- train_x: values of variables in the "train" data
+- train_y: activity ID in the "train" data
+- test_x: values of variables in the "test" data
+- test_y: activity ID in the "test" data
+- subject_train: subject ID for the "train" data
+- subject_test: subject ID for the "test" data
+- activityLabel: Descriptive names of activity IDs in test_y and train_y
+- features: label of each variablesin train_x and test_x
+- subject: subject ID for the "train" and the "test" data
+- activity: activity ID in the "train" and "test" data
+2. Merging data: Bind all subsets together
+- merging_train: variables in the train_x, train_y, and subject_train
+- merging_test: variables in the test_x, tesr_y, and subject_test
+- AllData: all variables in this dataset
+3. Extract only mean and STD: Create a Vector only contains Mean and STD of AllData
+- MeanAndSTD: a function that extract mean and STD
+- OnlyMeanAndSTD: AllData only contains mean and STD
+4. Change ID into activity name
+- activitylabel: change activityLable into a character 
+- OnlyMeanAndSTD$activityId: change activityID into activity name
+5. Make tidy data set
+- OnlyMeanAndSTD$subjectId: make subjectID into a factor
+- tidydata: make a data set contains "the average of each variable for each activity and each subject".
