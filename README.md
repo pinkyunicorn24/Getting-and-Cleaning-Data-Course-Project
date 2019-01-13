@@ -22,6 +22,6 @@ Uses descriptive activity names to name the activities in the data set
 Appropriately labels the data set with descriptive variable names.
 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 # How to use this rasp? 
-1. Firts, open the R script run_analysis.r.
+1. Open the R script run_analysis.r.
 2. change your word dictionary
 3. Run the R script run_analysis.r.
